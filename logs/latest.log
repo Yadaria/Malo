@@ -1,0 +1,58 @@
+[14:36:26] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:36:26] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:36:26] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:36:26] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:36:27] [main/INFO]: Loaded 0 recipes
+[14:36:27] [main/INFO]: Loaded 0 advancements
+[14:36:28] [Server thread/INFO]: Starting minecraft server version 1.13.1
+[14:36:28] [Server thread/INFO]: Loading properties
+[14:36:28] [Server thread/INFO]: Default game type: SURVIVAL
+[14:36:28] [Server thread/INFO]: Generating keypair
+[14:36:28] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:36:28] [Server thread/INFO]: Using default channel type
+[14:36:28] [Server thread/INFO]: Preparing level "world"
+[14:36:28] [Server thread/INFO]: Reloading ResourceManager: Default
+[14:36:30] [Server thread/INFO]: Loaded 524 recipes
+[14:36:31] [Server thread/INFO]: Loaded 571 advancements
+[14:36:31] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:36:31] [Server thread/INFO]: Preparing spawn area: 4%
+[14:36:31] [Server thread/INFO]: Preparing spawn area: 8%
+[14:36:31] [Server thread/INFO]: Preparing spawn area: 12%
+[14:36:32] [Server thread/INFO]: Preparing spawn area: 16%
+[14:36:32] [Server thread/INFO]: Preparing spawn area: 20%
+[14:36:32] [Server thread/INFO]: Preparing spawn area: 24%
+[14:36:32] [Server thread/INFO]: Preparing spawn area: 28%
+[14:36:32] [Server thread/INFO]: Preparing spawn area: 32%
+[14:36:32] [Server thread/INFO]: Preparing spawn area: 36%
+[14:36:32] [Server thread/INFO]: Preparing spawn area: 40%
+[14:36:32] [Server thread/INFO]: Preparing spawn area: 44%
+[14:36:32] [Server thread/INFO]: Preparing spawn area: 48%
+[14:36:32] [Server thread/INFO]: Preparing spawn area: 52%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 56%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 60%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 64%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 68%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 72%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 76%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 80%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 84%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 88%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 92%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 96%
+[14:36:33] [Server thread/INFO]: Preparing spawn area: 100%
+[14:36:33] [Server thread/INFO]: Time elapsed: 1984 ms
+[14:36:33] [Server thread/INFO]: Done (5.154s)! For help, type "help"
+[14:37:10] [User Authenticator #1/INFO]: UUID of player Ageeos is e7235e7a-207a-45ea-8c18-cdd46ba8dec0
+[14:37:11] [Server thread/INFO]: Ageeos[/127.0.0.1:51338] logged in with entity id 82 at (-1164.4285132196767, 64.0, -801.0800466910595)
+[14:37:11] [Server thread/INFO]: Ageeos joined the game
+[14:37:13] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2158ms or 43 ticks behind
+[14:37:25] [Server thread/INFO]: Ageeos lost connection: Disconnected
+[14:37:25] [Server thread/INFO]: Ageeos left the game
+[14:37:29] [Server thread/INFO]: Stopping server
+[14:37:29] [Server thread/INFO]: Saving players
+[14:37:29] [Server thread/INFO]: Saving worlds
+[14:37:29] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_end
+[14:37:29] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[14:37:29] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_nether
+[14:37:29] [Server Shutdown Thread/INFO]: Stopping server
+[14:37:29] [Server Shutdown Thread/INFO]: Saving players

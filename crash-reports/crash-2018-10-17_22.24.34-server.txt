@@ -1,0 +1,269 @@
+---- Minecraft Crash Report ----
+// Would you like a cupcake?
+
+Time: 17.10.18, 22:24
+Description: Watching Server
+
+java.lang.Error
+	at java.base@10.0.2/java.lang.Thread.sleep(Native Method)
+	at app//net.minecraft.server.MinecraftServer.run(SourceFile:589)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at java.base@10.0.2/java.lang.Thread.sleep(Native Method)
+
+-- Thread Dump --
+Details:
+	Threads: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@10.0.2/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@10.0.2/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+	at java.base@10.0.2/java.lang.ref.Reference.access$000(Unknown Source)
+	at java.base@10.0.2/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+
+"Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@67259076
+	at java.base@10.0.2/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@67259076
+	at java.base@10.0.2/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@10.0.2/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@10.0.2/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+
+"Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+"Attach Listener" daemon prio=5 Id=5 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=11 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@69e262e2
+	at java.base@10.0.2/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@69e262e2
+	at java.base@10.0.2/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@10.0.2/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+	at java.base@10.0.2/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+
+
+"Snooper Timer" daemon prio=5 Id=17 WAITING on java.util.TaskQueue@6dddfb06
+	at java.base@10.0.2/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@6dddfb06
+	at java.base@10.0.2/java.lang.Object.wait(Unknown Source)
+	at java.base@10.0.2/java.util.TimerThread.mainLoop(Unknown Source)
+	at java.base@10.0.2/java.util.TimerThread.run(Unknown Source)
+
+
+"Server Infinisleeper" daemon prio=5 Id=18 TIMED_WAITING
+	at java.base@10.0.2/java.lang.Thread.sleep(Native Method)
+	at app//so$1.run(SourceFile:94)
+
+
+"Java2D Disposer" daemon prio=10 Id=19 WAITING on java.lang.ref.ReferenceQueue$Lock@28df68d9
+	at java.base@10.0.2/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@28df68d9
+	at java.base@10.0.2/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.base@10.0.2/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.desktop@10.0.2/sun.java2d.Disposer.run(Unknown Source)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"AWT-Shutdown" prio=5 Id=20 WAITING on java.lang.Object@6332fb94
+	at java.base@10.0.2/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@6332fb94
+	at java.base@10.0.2/java.lang.Object.wait(Unknown Source)
+	at java.desktop@10.0.2/sun.awt.AWTAutoShutdown.run(Unknown Source)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"AWT-Windows" daemon prio=6 Id=21 RUNNABLE (in native)
+	at java.desktop@10.0.2/sun.awt.windows.WToolkit.eventLoop(Native Method)
+	at java.desktop@10.0.2/sun.awt.windows.WToolkit.run(Unknown Source)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"AWT-EventQueue-0" prio=6 Id=23 RUNNABLE
+	at java.desktop@10.0.2/sun.font.FileFontStrike._getGlyphImageFromWindows(Native Method)
+	at java.desktop@10.0.2/sun.font.FileFontStrike.getGlyphImageFromWindows(Unknown Source)
+	at java.desktop@10.0.2/sun.font.FileFontStrike.getGlyphImageFromNative(Unknown Source)
+	at java.desktop@10.0.2/sun.font.FileFontStrike.getGlyphImagePtr(Unknown Source)
+	at java.desktop@10.0.2/sun.font.FileFontStrike.getGlyphAdvance(Unknown Source)
+	at java.desktop@10.0.2/sun.font.FileFontStrike.getGlyphAdvance(Unknown Source)
+	at java.desktop@10.0.2/sun.font.CompositeStrike.getGlyphAdvance(Unknown Source)
+	at java.desktop@10.0.2/sun.font.CompositeStrike.getCodePointAdvance(Unknown Source)
+	...
+
+
+"TimerQueue" daemon prio=5 Id=25 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1b3aad88
+	at java.base@10.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1b3aad88
+	at java.base@10.0.2/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+	at java.base@10.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+	at java.base@10.0.2/java.util.concurrent.DelayQueue.take(Unknown Source)
+	at java.desktop@10.0.2/javax.swing.TimerQueue.run(Unknown Source)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.locks.ReentrantLock$NonfairSync@193d6062
+
+
+"Thread-1" daemon prio=5 Id=24 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48f09796
+	at java.base@10.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@48f09796
+	at java.base@10.0.2/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.base@10.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.base@10.0.2/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at app//com.mojang.util.QueueLogAppender.getNextLogEvent(QueueLogAppender.java:77)
+	at app//sr.a(SourceFile:124)
+	at app//sr$$Lambda$1491/1018053912.run(Unknown Source)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"Server thread" prio=5 Id=27 TIMED_WAITING
+	at java.base@10.0.2/java.lang.Thread.sleep(Native Method)
+	at app//net.minecraft.server.MinecraftServer.run(SourceFile:589)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"DestroyJavaVM" prio=5 Id=29 RUNNABLE
+
+
+"Server console handler" daemon prio=5 Id=30 RUNNABLE (in native)
+	at java.base@10.0.2/java.io.FileInputStream.readBytes(Native Method)
+	at java.base@10.0.2/java.io.FileInputStream.read(Unknown Source)
+	at java.base@10.0.2/java.io.BufferedInputStream.read1(Unknown Source)
+	at java.base@10.0.2/java.io.BufferedInputStream.read(Unknown Source)
+	-  locked java.io.BufferedInputStream@3c6a2b47
+	at java.base@10.0.2/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base@10.0.2/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base@10.0.2/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	-  locked java.io.InputStreamReader@4ea662d8
+	at java.base@10.0.2/java.io.InputStreamReader.read(Unknown Source)
+	...
+
+
+"D3D Screen Updater" daemon prio=7 Id=31 TIMED_WAITING on java.lang.Object@3ec069
+	at java.base@10.0.2/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.Object@3ec069
+	at java.desktop@10.0.2/sun.java2d.d3d.D3DScreenUpdateManager.run(Unknown Source)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"ObjectCleanerThread" daemon prio=1 Id=32 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@4cbeabdf
+	at java.base@10.0.2/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@4cbeabdf
+	at java.base@10.0.2/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at app//io.netty.util.internal.ObjectCleaner$1.run(ObjectCleaner.java:54)
+	at app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #0" daemon prio=5 Id=33 RUNNABLE (in native)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked sun.nio.ch.Util$2@21e3911c
+	-  locked java.util.Collections$UnmodifiableSet@5cae975a
+	-  locked sun.nio.ch.WindowsSelectorImpl@2a65292e
+	at java.base@10.0.2/sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+	at app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411)
+	...
+
+
+"Server Watchdog" daemon prio=5 Id=34 RUNNABLE
+	at java.management@10.0.2/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@10.0.2/sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at java.management@10.0.2/sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at app//sp.run(SourceFile:45)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #1" daemon prio=5 Id=35 RUNNABLE (in native)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked sun.nio.ch.Util$2@13bc8fee
+	-  locked java.util.Collections$UnmodifiableSet@2e6a87f4
+	-  locked sun.nio.ch.WindowsSelectorImpl@656d124
+	at java.base@10.0.2/sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+	at app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411)
+	...
+
+
+"File IO Thread" prio=1 Id=36 TIMED_WAITING
+	at java.base@10.0.2/java.lang.Thread.sleep(Native Method)
+	at app//cdv.c(SourceFile:59)
+	at app//cdv.run(SourceFile:35)
+	at java.base@10.0.2/java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #2" daemon prio=5 Id=37 RUNNABLE (in native)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked sun.nio.ch.Util$2@5f9a499
+	-  locked java.util.Collections$UnmodifiableSet@724d8837
+	-  locked sun.nio.ch.WindowsSelectorImpl@862e4ad
+	at java.base@10.0.2/sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+	at app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411)
+	...
+
+
+"Netty Server IO #3" daemon prio=5 Id=41 RUNNABLE (in native)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at java.base@10.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked sun.nio.ch.Util$2@380ddb74
+	-  locked java.util.Collections$UnmodifiableSet@70986d80
+	-  locked sun.nio.ch.WindowsSelectorImpl@6e0a5f94
+	at java.base@10.0.2/sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+	at app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411)
+	...
+
+
+"Netty Server IO #4" daemon prio=5 Id=42 RUNNABLE
+	at app//io.netty.util.internal.InternalThreadLocalMap.indexedVariable(InternalThreadLocalMap.java:287)
+	at app//io.netty.util.concurrent.FastThreadLocal.addToVariablesToRemove(FastThreadLocal.java:100)
+	at app//io.netty.util.concurrent.FastThreadLocal.initialize(FastThreadLocal.java:192)
+	at app//io.netty.util.concurrent.FastThreadLocal.get(FastThreadLocal.java:143)
+	at app//io.netty.handler.codec.CodecOutputList.newInstance(CodecOutputList.java:94)
+	at app//io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:256)
+	at app//io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at app//io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	...
+
+
+
+Stacktrace:
+	at sp.run(SourceFile:61)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.13.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 10.0.2, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), "Oracle Corporation"
+	Memory: 755141632 bytes (720 MB) / 1073741824 bytes (1024 MB) up to 1073741824 bytes (1024 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 20; []
+	Data Packs: vanilla
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)
